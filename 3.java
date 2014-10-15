@@ -1,3 +1,4 @@
+--hehehehhe
 package Book;
 import com.opensymphony.xwork2.ActionSupport;
 import java.sql.*;
@@ -21,12 +22,12 @@ public class BookAction extends ActionSupport{
 			Statement st = con.createStatement();     
 	        int count = st.executeUpdate(del); 
 	              
-	        System.out.println("¡¶"+titles+"¡·ÒÑÉ¾³ı³É¹¦£¡^_^");
-	        System.out.println("Book±íÖĞÉ¾³ı  "+count+" ÌõÊı¾İ\n");      
+	        System.out.println("ã€Š"+titles+"ã€‹å·²åˆ é™¤æˆåŠŸï¼^_^");
+	        System.out.println("Bookè¡¨ä¸­åˆ é™¤  "+count+" æ¡æ•°æ®\n");      
 			ret = SUCCESS;
 		    		
 		}catch (Exception e) {
-			System.out.println("¡¶"+titles+"¡·É¾³ıÊ§°Ü£¡T_T");
+			System.out.println("ã€Š"+titles+"ã€‹åˆ é™¤å¤±è´¥ï¼T_T");
 			ret = ERROR;
 	    }finally {
 	        if (con != null) {
